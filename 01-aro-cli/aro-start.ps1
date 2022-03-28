@@ -1,6 +1,6 @@
 ﻿##register required registries for ARO
 
-az account set --subscription 549cf74a-fcb0-49d2-8a63-968ea8b2b1f8
+az account set --subscription $1
 
 
 
