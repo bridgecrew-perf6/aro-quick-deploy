@@ -1,8 +1,7 @@
 #!/bin/bash
+subscription_id=$1
 
-printf "\n"
-echo "--######################################--"
-printf "\n"
-echo "Enabling AAD authentication for cluster"
-printf "\n"
-echo "--######################################--"
+az ad sp create-for-rbac \
+-n "MyApp" \
+--role Contributor \
+--scopes /subscriptions/$subscription_id
